@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Portfolio Brian Oshiro</title>
+    <!-- CSS only-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos/styles.css" />
+</head>
+
+<body>
+    <!--comienzo INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Portfolio</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionando" onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)" class="">Sobre Mi</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">Servicios</a></li>
+                            <li><a href="#habilidades" onclick="seleccionar(this)">Habilidades</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <!--comienzo icono responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--comienzo icono redes-->
+                    <div class="redes">
+                        <a href="https://linkedin.com/in/brian-oshiro" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i>Linked In</a>
+                        <a href="https://github.com/oshirobrian" target="_blank"><i
+                                class="fa-brands fa-github"></i>GitHub</a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Brian Oshiro</span>, Desarrollador Web</h2>
+                <p class="descripcion">
+                    Diseños y Desarrollos de sitios digitales.<br/> Tenés una idea o proyecto? Trabajemos juntos!!! <span><i class="fa-solid fa-face-smile-wink"></i></span></p>
+                <a href="#contact">Contactame</a>
+            </div>
+        </div>
+    </section>
+
+    <!--comienzo SOBREMI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="imagenes/fotoperfil.png" alt="fotoperfil" title="fotoperfil">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola!, soy <span>Brian</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta corrupti quasi consectetur tenetur eius,
+                enim nobis possimus eum, non voluptatum doloremque laborum? Aut velit, doloribus similique sed nulla
+                reprehenderit sapiente.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--comienzo SERVICIOS-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Sitio web Full Responsive 100% adaptable a pantallas
+                        Smartphone, Tablets y computadoras.</li>
+                    <li>Pagina principal más 4 secciones a elección.</li>
+                    <li>Acceso a redes sociales.</li>
+                    <li>Formulario avanzado de contactos.</li>
+                    <li>Configuración SEO para posicionamiento en buscadores.</li>
+                    <li>Creación de dominio.</li>
+                    <li>Publicación del Sitio en el servidor.</li>
+                </ul>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Herramientas a Utilizar</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SCSS SASS</li>
+                    <li>JAVA SCRIP</li>
+                    <li>BOOTSTRAP</li>
+                </ul>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Fases de Desarrollo</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Wireframe</li>
+                    <li>Diseño del sitio</li>
+                    <li>Pruebas y ajustes de diseño</li>
+                    <li>Entrega final y subida al servidor</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!--comienzo HABILIDADES-->
+    <div class="contenedor-habilidades" id="habilidades">
+        <h3>Habilidades</h3>
+        <div class="habilidades">
+            <div class="info">
+                <p><span class="lista"></span>HTML5</p>
+                <span>95%</span>
+            </div>
+            <div class="barra">
+                <div id="html"></div>
+            </div>
+        </div>
+        <div class="habilidades">
+            <div class="info">
+                <p><span class="lista"></span>CSS3</p>
+                <span">75%</span>
+            </div>
+            <div class="barra">
+                <div id="css" class=""></div>
+            </div>
+        </div>
+        <div class="habilidades">
+            <div class="info">
+                <p><span class="lista"></span>NODE JS</p>
+                <span>75%</span>
+            </div>
+            <div class="barra">
+                <div id="nodejs" class=""></div>
+            </div>
+        </div>
+        <div class="habilidades">
+            <div class="info">
+                <p><span class="lista"></span>JAVA SCRIP</p>
+                <span">45%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+        <div class="habilidades">
+            <div class="info">
+                <p><span class="lista"></span>GIT & GITHUB</p>
+                <span>95%</span>
+            </div>
+            <div class="barra">
+                <div id="git" class=""></div>
+            </div>
+        </div>
+        <div class="habilidades">
+            <div class="info">
+                <p><span class="lista"></span>FRAMEWORK BOOTSTRAP</p>
+                <span>85%</span>
+            </div>
+            <div class="barra">
+                <div id="botstrap" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!--comienzo CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="email" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto" class="input-full" />
+
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Deja tu mensaje..."
+                        class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+        </div>
+        </form>
+        </div>
+    </section>
+
+    <!--comienzo FOOTER-->
+    <footer>
+        <P>Todos los derechos reservados -2022</P>
+        <div class="redes">
+            <a href="https://linkedin.com/in/brian-oshiro" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i>Linked In</a>
+            <a href="https://github.com/oshirobrian" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+        </div>
+    </footer>
+
+    <script src="scrip.js"></script>
+</body>
+
+</html>
