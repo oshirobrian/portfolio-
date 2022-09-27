@@ -41,6 +41,5 @@ if(distancia_habilidades >=300) {
     document.getElementById(js).classList.add("barra-progreso4");
     document.getElementById(git).classList.add("barra-progreso5");
     document.getElementById(bootstrap).classList.add("barra-progreso6");
-
 }
 }

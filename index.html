@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>Portfolio Brian Oshiro</title>
     <!-- CSS only-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -42,11 +43,12 @@
                     </div>
                 </div>
             </header>
-            <div class="presentacion">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="presentacion">
                 <p class="bienvenida">Bienvenidos</p>
                 <h2>Soy <span>Brian Oshiro</span>, Desarrollador Web</h2>
                 <p class="descripcion">
-                    Diseños y Desarrollos de sitios digitales.<br/> Tenés una idea o proyecto? Trabajemos juntos!!! <span><i class="fa-solid fa-face-smile-wink"></i></span></p>
+                    Diseños y Desarrollos de sitios digitales.<br /> Tenés una idea o proyecto? Trabajemos juntos!!!
+                    <span><i class="fa-solid fa-face-smile-wink"></i></span></p>
                 <a href="#contact">Contactame</a>
             </div>
         </div>
@@ -54,10 +56,10 @@
 
     <!--comienzo SOBREMI-->
     <section id="sobremi">
-        <div class="contenedor-foto">
+        <div data-aos="flip-left" class="contenedor-foto">
             <img src="imagenes/fotoperfil.png" alt="fotoperfil" title="fotoperfil">
         </div>
-        <div class="sobremi">
+        <div data-aos="fade-left" class="sobremi">
             <p class="titulo-seccion">Sobre Mi</p>
             <h2>Hola!, soy <span>Brian</span></h2>
             <h3>Desarrollador Web</h3>
@@ -72,7 +74,7 @@
     <section id="servicios">
         <h3 class="titulo-seccion">MIS SERVICIOS</h3>
         <div class="fila">
-            <div class="servicio">
+            <div data-aos="flip-left" class="servicio">
                 <span class="icono"><i class="fa-solid fa-code"></i></span>
                 <h4>Diseño Sitios Web</h4>
                 <hr>
@@ -87,7 +89,7 @@
                     <li>Publicación del Sitio en el servidor.</li>
                 </ul>
             </div>
-            <div class="servicio">
+            <div data-aos="flip-left" class="servicio">
                 <span class="icono"><i class="fa-solid fa-code"></i></span>
                 <h4>Herramientas a Utilizar</h4>
                 <hr>
@@ -99,7 +101,7 @@
                     <li>BOOTSTRAP</li>
                 </ul>
             </div>
-            <div class="servicio">
+            <div data-aos="flip-left" class="servicio">
                 <span class="icono"><i class="fa-solid fa-code"></i></span>
                 <h4>Fases de Desarrollo</h4>
                 <hr>
@@ -115,7 +117,8 @@
     </section>
 
     <!--comienzo HABILIDADES-->
-    <div class="contenedor-habilidades" id="habilidades">
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="contenedor-habilidades"
+        id="habilidades">
         <h3>Habilidades</h3>
         <div class="habilidades">
             <div class="info">
@@ -207,6 +210,10 @@
     </footer>
 
     <script src="scrip.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
